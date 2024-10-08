@@ -1,0 +1,201 @@
+/* ExpenseForm.css */
+
+/* Form animation */
+.animated-form {
+    animation: fadeIn 0.8s ease-in-out;
+  }
+  
+  /* Field fade-in animation */
+  .fade-in {
+    animation: slideIn 0.6s ease-in-out;
+  }
+  
+  /* Button animation */
+  .animated-btn {
+    transition: background-color 0.3s ease-in-out;
+  }
+  
+  .animated-btn:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Keyframes for slide-in effect */
+  @keyframes slideIn {
+    from {
+      opacity: 0;
+      transform: translateY(10px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  /* Keyframes for form fade-in effect */
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
+
+  /* src/components/navbar.css */
+.navbar {
+    background-color: #282c34;
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .brand {
+    color: white; 
+    font-weight: bolder;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1.5rem;
+  }
+  
+  .navbar-menu {
+    list-style: none;
+    display: flex;
+  }
+  
+  .navbar-menu li {
+    margin: 0 1rem;
+  }
+  
+  .navbar-menu a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+  
+  .navbar-menu a:hover {
+    color: #61dafb;
+  }
+
+
+  .expense-chart-container {
+    padding: 20px;
+  }
+  
+  .chart-wrapper {
+    margin-bottom: 40px;
+  }
+  
+  .chart-heading {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .table {
+    width: 100%;
+    margin-top: 20px;
+  }
+
+
+  /* ExpenseChart.css */
+.chart-wrapper {
+    max-width: 800px; /* Set a maximum width for the chart */
+    margin: 0 auto; /* Center the chart horizontally */
+  }
+  
+  .chart-container {
+    width: 100%; /* Make chart container full width */
+    height: 400px; /* Set a fixed height for the charts */
+  }
+  
+  /* Media query for smaller screens */
+  @media (max-width: 768px) {
+    .chart-container {
+      height: 300px; /* Reduce height on smaller screens */
+    }
+  }
+
+  
+  /* Footer.css */
+  .footer {
+    background-color: #222;
+    color: #fff;
+    text-align: center;
+    padding: 50px;
+  }
+  
+  .footer h3 {
+    margin-bottom: 10px;
+    font-size: 1.5rem;
+  }
+  
+  .footer p {
+    margin-bottom: 20px;
+  }
+  
+  .socials {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+  }
+  
+  .socials li {
+    display: inline-block;
+    margin: 0 10px;
+  }
+  
+  .social-icon {
+    color: #fff;
+    transition: transform 0.3s ease, color 0.3s ease;
+  }
+  
+  .social-icon:hover {
+    color: #00aced; /* Change color on hover */
+    transform: scale(1.2); /* Slight zoom on hover */
+  }
+  
+
+  /* styles.css */
+.homepage .hero-section {
+    background: url('https://wallpaperaccess.com/full/732220.jpg') no-repeat center center;
+    background-size: cover;
+    color: white;
+    font-weight: bolder;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    padding: 100px 0;
+  }
+  
+  .homepage .features-section {
+    background-color: #f8f9fa;
+  }
+  
+  .feature-box {
+    padding: 20px;
+    transition: transform 0.3s ease;
+    border-radius: 10px;
+    z-index: 1000;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+  }
+  
+  .feature-box:hover {
+    transform: scale(1.05);
+  }
+  
+  .testimonials-section .testimonial {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  }
+  
+  .cta-section {
+    background-color: #007bff;
+    color: white;
+    padding: 50px 0;
+  }
+  
+  .cta-section .btn-success {
+    background-color: #28a745;
+    border: none;
+  }
+  
